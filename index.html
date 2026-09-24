@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimal TODO App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>Task Manager</h1>
+      <p class="subtitle">シンプルにタスクを管理しましょう</p>
+    </header>
+
+    <main>
+      <!-- タスク入力エリア -->
+      <div class="todo-form">
+        <input 
+          type="text" 
+          id="todo-input" 
+          placeholder="新しいタスクを入力..." 
+          autocomplete="off"
+        >
+        <button type="button" id="add-btn">追加</button>
+      </div>
+
+      <!-- タスク一覧 -->
+      <ul id="todo-list" class="todo-list"></ul>
+
+      <!-- ステータス情報 -->
+      <footer class="app-footer">
+        <span id="task-count">全タスク: 0件</span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
